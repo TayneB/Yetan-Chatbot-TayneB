@@ -6,7 +6,7 @@
  */
 
 const getBotReply = (msg) => {
-  return "Error unknown...";
+  return `Well met, ${msg}, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?`;
 };
 
 export { getBotReply };

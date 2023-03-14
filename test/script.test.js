@@ -11,9 +11,10 @@ beforeEach(() => {
 });
 
 describe("getBotReply", () => {
-  it("should reply with [PUT YOUR DESCRIPTION HERE]", () => {
-    const botReply1 = getBotReply("Harry");
-    const expectedReply1 = "";
+  it("should have correct response for George", () => {
+    const botReply1 = getBotReply("George");
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
 
     // Uncomment the following line and update your expectation
     // expect(botReply1).toEqual(expectedReply1);
