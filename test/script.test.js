@@ -49,8 +49,8 @@ describe("getBotReply", () => {
 
     // Input: no
     const botReply3 = getBotReply('no');
-    // Output: Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
-    const expectedReply3 = `Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
+    // Output: Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
+    const expectedReply3 = `Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
     expect(botReply3).toEqual(expectedReply3);
     
 
@@ -71,8 +71,8 @@ describe("getBotReply", () => {
 
     // Input: no
     const botReply3 = getBotReply('no');
-    // Output: Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
-    const expectedReply3 = `Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
+    // Output: Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
+    const expectedReply3 = `Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
     expect(botReply3).toEqual(expectedReply3);
     
     // Input: timeloop
@@ -97,13 +97,13 @@ describe("getBotReply", () => {
 
     // Input: no
     const botReply3 = getBotReply('no');
-    // Output: Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
-    const expectedReply3 = `Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
+    // Output: Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
+    const expectedReply3 = `Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
     expect(botReply3).toEqual(expectedReply3);
     
     // Input: timeloop
     const botReply4 = getBotReply('timeloop');
-    // Output: Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
+    // Output: Greetings traveler, I am Yetan. What do you call yourself?
     const expectedReply4 = `Greetings traveler, I am Yetan. What do you call yourself?`;
     expect(botReply4).toEqual(expectedReply4);
 
