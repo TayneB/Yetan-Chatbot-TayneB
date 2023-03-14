@@ -82,3 +82,13 @@ Input: steel
 Output: Do you like the vast wilds and hiking?
 Input: yes
 Output: Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.
+
+## t10
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: magic
+Output: Do you like plants and nature?
+Input: yes
+Output: I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.
