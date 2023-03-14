@@ -77,7 +77,7 @@ describe("getBotReply", () => {
     
     // Input: timeloop
     const botReply4 = getBotReply('timeloop');
-    // Output: Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
+    // Output: Greetings traveler, I am Yetan. What do you call yourself?
     const expectedReply4 = `Greetings traveler, I am Yetan. What do you call yourself?`;
     expect(botReply4).toEqual(expectedReply4);
   });
@@ -112,5 +112,20 @@ describe("getBotReply", () => {
     // Output: Well met, Still George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
     const expectedReply5 = `Well met, Still George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?`;
     expect(botReply5).toEqual(expectedReply5);
+  });
+
+  it("should have correct response for George, yes", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: yes
+    const botReply2 = getBotReply('yes');
+    // Output: Then we shall begin. Steel or magic?
+    const expectedReply2 = 'Then we shall begin. Steel or magic?';
+    expect(botReply2).toEqual(expectedReply2);
+
   });
 });
