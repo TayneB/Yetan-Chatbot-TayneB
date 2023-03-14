@@ -18,6 +18,7 @@ describe("getBotReply", () => {
     const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
     expect(botReply1).toEqual(expectedReply1);
   });
+  
   it("should have correct response for George, no", () => {
     // Input: George
     const botReply1 = getBotReply("George");
