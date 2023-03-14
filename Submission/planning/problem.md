@@ -27,7 +27,7 @@ Output: Well met, George, I am here to help you decide your destiny within the w
 Input: no
 Output: A newcomer! Let me explain, Dungeons and Dragons is a roleplaying game that has you act as an adventurer whom you create to play as with a group of friends to overcome challenges set for your group by the game master. The outcome of actions within the game are determined by dice rolls and your characters abilities. We are going to look at what classes from this game might interest you based on your preferences or what sounds cool! Would like to continue determining your fate?
 Input: no
-Output: Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
+Output: Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
 
 ## t4
 Input: George
@@ -35,7 +35,7 @@ Output: Well met, George, I am here to help you decide your destiny within the w
 Input: no
 Output: A newcomer! Let me explain, Dungeons and Dragons is a roleplaying game that has you act as an adventurer whom you create to play as with a group of friends to overcome challenges set for your group by the game master. The outcome of actions within the game are determined by dice rolls and your characters abilities. We are going to look at what classes from this game might interest you based on your preferences or what sounds cool! Would like to continue determining your fate?
 Input: no
-Output: Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
+Output: Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
 Input: timeloop
 Output: Greetings traveler, I am Yetan. What do you call yourself?
 
@@ -45,9 +45,22 @@ Output: Well met, George, I am here to help you decide your destiny within the w
 Input: no
 Output: A newcomer! Let me explain, Dungeons and Dragons is a roleplaying game that has you act as an adventurer whom you create to play as with a group of friends to overcome challenges set for your group by the game master. The outcome of actions within the game are determined by dice rolls and your characters abilities. We are going to look at what classes from this game might interest you based on your preferences or what sounds cool! Would like to continue determining your fate?
 Input: no
-Output: Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
+Output: Well George, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.
 Input: timeloop
 Output: Greetings traveler, I am Yetan. What do you call yourself?
 Input: Still George
 Output: Well met, Still George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
   
+## t6
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+
+## t7
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: magic
+Output: Do you like plants and nature?
