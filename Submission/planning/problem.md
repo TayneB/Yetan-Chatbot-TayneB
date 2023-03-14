@@ -103,7 +103,7 @@ Output: Do you like plants and nature?
 Input: no
 Output: Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?
 
-## t2 - fleshing out the magic path
+## t12 - fleshing out the magic path
 Input: George
 Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
 Input: yes

@@ -31,7 +31,7 @@ const getBotReply = (msg) => {
     return 'Then we shall begin. Steel or magic?';
   };
   // Section is the "blocked" code
-  // magic path
+  // both paths follow the same steps and do it neatly
   if (msg === 'magic') {
     path = msg;
     step = 5;
@@ -49,6 +49,26 @@ const getBotReply = (msg) => {
     if (path === 'magic') {
       if (msg === 'yes') {
         return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
+      }
+      if (msg === 'no') {
+        return 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
+      }
+    }
+    if (path === 'steel') {
+      if (msg === 'yes') {
+        return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.';
+      }
+      if (msg === 'no') {
+        return '';
+      }
+    }
+  }
+
+  if (step === 6) {
+    step = 7;
+    if (path === 'magic') {
+      if (msg === 'yes') {
+        return 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
       }
       if (msg === 'no') {
         return 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
