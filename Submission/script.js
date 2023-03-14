@@ -34,9 +34,36 @@ const getBotReply = (msg) => {
   // magic path
   if (msg === 'magic') {
     path = msg;
+    step = 5;
     return 'Do you like plants and nature?';
   };
-  if (path === 'magic') {
+
+  if (msg === 'steel') {
+    path = msg;
+    step = 5;
+    return 'Do you like the vast wilds and hiking?';
+  }
+
+  if (step === 5) {
+    step = 6;
+    if (path === 'magic') {
+      if (msg === 'yes') {
+        return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
+      }
+      if (msg === 'no') {
+        return 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
+      }
+    }
+    if (path === 'steel') {
+      if (msg === 'yes') {
+        return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.';
+      }
+      if (msg === 'no') {
+        return '';
+      }
+    }
+  }
+  /* if (path === 'magic') {
     step = 5;
     if (msg === 'yes' && step === 5) {
     return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
@@ -57,7 +84,7 @@ const getBotReply = (msg) => {
   };
   if (msg === 'yes' && step === 5) {
     return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.'
-  };
+  }; */
 
   // Separated from the rest as this is a reset function
   if (msg === 'timeloop') {
