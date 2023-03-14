@@ -24,7 +24,11 @@ const getBotReply = (msg) => {
   };
   };
   if (msg === 'yes') {
+    step = 4;
     return 'Then we shall begin. Steel or magic?';
+  }
+  if (msg === 'magic') {
+    return 'Do you like plants and nature?';
   }
   // Separated from the rest as this is a reset function
   if (msg === 'timeloop') {
