@@ -8,6 +8,7 @@
 let step = 1;
 let name;
 const getBotReply = (msg) => {
+  // intro section to test user knowledge
   if (step === 1) {
     step = 2;
     name = `${msg}`;
@@ -23,16 +24,24 @@ const getBotReply = (msg) => {
     return `Well ${name}, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
   };
   };
-  if (msg === 'yes') {
+  // Time anomaly detected
+  if ((msg === 'yes' && step === 2 )|| msg === 'beg') {
     step = 4;
     return 'Then we shall begin. Steel or magic?';
   };
+  // Section is the "blocked" code
   if (msg === 'magic') {
     return 'Do you like plants and nature?';
   };
   if (msg === 'steel') {
+    step = 5;
+    console.log(step);
     return 'Do you like the vast wilds and hiking?';
   }
+  if (msg === 'yes' && step === 5) {
+    return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.'
+  };
+
   // Separated from the rest as this is a reset function
   if (msg === 'timeloop') {
     step = 1;

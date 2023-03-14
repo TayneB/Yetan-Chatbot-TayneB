@@ -170,7 +170,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
   });
 
-  it("should have correct response for George, yes, steel", () => {
+  it("should have correct response for George, yes, steel, yes", () => {
     // Input: George
     const botReply1 = getBotReply("George");
     // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
@@ -190,7 +190,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
 
     // Input: yes
-    const botReply4 = getBotReply('steel');
+    const botReply4 = getBotReply('yes');
     // Output: Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.
     const expectedReply4 = 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.';
     expect(botReply4).toEqual(expectedReply4);
