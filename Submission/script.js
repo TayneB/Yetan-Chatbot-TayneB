@@ -7,6 +7,7 @@
 
 let step = 1;
 let name;
+let path;
 const getBotReply = (msg) => {
   // intro section to test user knowledge
   if (step === 1) {
@@ -31,13 +32,17 @@ const getBotReply = (msg) => {
   };
   // Section is the "blocked" code
   if (msg === 'magic') {
+    path = 'magic';
     return 'Do you like plants and nature?';
   };
+  if (path === 'magic') {
+    return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
+  }
   if (msg === 'steel') {
     step = 5;
     console.log(step);
     return 'Do you like the vast wilds and hiking?';
-  }
+  };
   if (msg === 'yes' && step === 5) {
     return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.'
   };

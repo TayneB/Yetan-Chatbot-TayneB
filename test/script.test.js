@@ -209,7 +209,7 @@ describe("getBotReply", () => {
     const expectedReply2 = 'Then we shall begin. Steel or magic?';
     expect(botReply2).toEqual(expectedReply2);
 
-    // Input: steel
+    // Input: magic
     const botReply3 = getBotReply('magic');
     // Output: Do you like the vast wilds and hiking?
     const expectedReply3 = 'Do you like plants and nature?';
