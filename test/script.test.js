@@ -247,4 +247,36 @@ describe("getBotReply", () => {
     const expectedReply4 = 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
     expect(botReply4).toEqual(expectedReply4);
   });
+
+  it("should have correct response for George, yes, magic, no", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: yes
+    const botReply2 = getBotReply('yes');
+    // Output: Then we shall begin. Steel or magic?
+    const expectedReply2 = 'Then we shall begin. Steel or magic?';
+    expect(botReply2).toEqual(expectedReply2);
+
+    // Input: magic
+    const botReply3 = getBotReply('magic');
+    // Output: Do you like plants and nature?
+    const expectedReply3 = 'Do you like plants and nature?';
+    expect(botReply3).toEqual(expectedReply3);
+
+    // Input: no
+    const botReply4 = getBotReply('no');
+    // Output: Me neither in honesty, does the sound of playing music to inspire allies and confound foes please your ears?.
+    const expectedReply4 = 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
+    expect(botReply4).toEqual(expectedReply4);
+
+    // Input: no
+    const botReply5 = getBotReply('yes');
+    // Output: Me neither in honesty, does the sound of playing music to inspire allies and confound foes please your ears?.
+    const expectedReply5 = 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
+    expect(botReply5).toEqual(expectedReply5);
+  });
 });
