@@ -37,12 +37,17 @@ const getBotReply = (msg) => {
     return 'Do you like plants and nature?';
   };
   if (path === 'magic') {
-    if (msg === 'yes') {
+    step = 5;
+    if (msg === 'yes' && step === 5) {
     return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
     };
     if (msg === 'no') {
+      step = 6;
       return 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
-    }
+    };
+    if (msg === 'yes' && step === 6) {
+      return 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
+    } 
   };
 
   // steel path

@@ -248,7 +248,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
 
-  it("should have correct response for George, yes, magic, no", () => {
+  it("should have correct response for George, yes, magic, no, yes", () => {
     // Input: George
     const botReply1 = getBotReply("George");
     // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
@@ -273,7 +273,7 @@ describe("getBotReply", () => {
     const expectedReply4 = 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
     expect(botReply4).toEqual(expectedReply4);
 
-    // Input: no
+    // Input: yes
     const botReply5 = getBotReply('yes');
     // Output: Me neither in honesty, does the sound of playing music to inspire allies and confound foes please your ears?.
     const expectedReply5 = 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
