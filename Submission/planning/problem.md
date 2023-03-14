@@ -64,3 +64,11 @@ Input: yes
 Output: Then we shall begin. Steel or magic?
 Input: magic
 Output: Do you like plants and nature?
+
+## t8
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: steel
+Output: Do you like the vast wilds and hiking?

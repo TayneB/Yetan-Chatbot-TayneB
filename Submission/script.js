@@ -6,7 +6,7 @@
  */
 
 let step = 1;
-let name = 'Traveller';
+let name;
 const getBotReply = (msg) => {
   if (step === 1) {
     step = 2;
@@ -26,9 +26,12 @@ const getBotReply = (msg) => {
   if (msg === 'yes') {
     step = 4;
     return 'Then we shall begin. Steel or magic?';
-  }
+  };
   if (msg === 'magic') {
     return 'Do you like plants and nature?';
+  };
+  if (msg === 'steel') {
+    return 'Do you like the vast wilds and hiking?';
   }
   // Separated from the rest as this is a reset function
   if (msg === 'timeloop') {
