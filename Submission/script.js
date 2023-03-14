@@ -20,8 +20,9 @@ const getBotReply = (msg) => {
     return `Well if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
   };
   if (step === 0) {
+    step = 1;
     return `Greetings traveler, I am Yetan. What do you call yourself?`;
-  }
+  };
 
 };
 
