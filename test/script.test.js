@@ -211,14 +211,40 @@ describe("getBotReply", () => {
 
     // Input: magic
     const botReply3 = getBotReply('magic');
-    // Output: Do you like the vast wilds and hiking?
+    // Output: Do you like plants and nature?
     const expectedReply3 = 'Do you like plants and nature?';
     expect(botReply3).toEqual(expectedReply3);
 
     // Input: yes
     const botReply4 = getBotReply('yes');
-    // Output: Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.
+    // Output: I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts..
     const expectedReply4 = 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
+    expect(botReply4).toEqual(expectedReply4);
+  });
+
+  it("should have correct response for George, yes, magic, no", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: yes
+    const botReply2 = getBotReply('yes');
+    // Output: Then we shall begin. Steel or magic?
+    const expectedReply2 = 'Then we shall begin. Steel or magic?';
+    expect(botReply2).toEqual(expectedReply2);
+
+    // Input: magic
+    const botReply3 = getBotReply('magic');
+    // Output: Do you like plants and nature?
+    const expectedReply3 = 'Do you like plants and nature?';
+    expect(botReply3).toEqual(expectedReply3);
+
+    // Input: no
+    const botReply4 = getBotReply('no');
+    // Output: Me neither in honesty, does the sound of playing music to inspire allies and confound foes please your ears?.
+    const expectedReply4 = 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
     expect(botReply4).toEqual(expectedReply4);
   });
 });

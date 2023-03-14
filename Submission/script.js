@@ -31,16 +31,23 @@ const getBotReply = (msg) => {
     return 'Then we shall begin. Steel or magic?';
   };
   // Section is the "blocked" code
+  // magic path
   if (msg === 'magic') {
-    path = 'magic';
+    path = msg;
     return 'Do you like plants and nature?';
   };
   if (path === 'magic') {
+    if (msg === 'yes') {
     return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
-  }
+    };
+    if (msg === 'no') {
+      return 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
+    }
+  };
+
+  // steel path
   if (msg === 'steel') {
     step = 5;
-    console.log(step);
     return 'Do you like the vast wilds and hiking?';
   };
   if (msg === 'yes' && step === 5) {
@@ -50,6 +57,7 @@ const getBotReply = (msg) => {
   // Separated from the rest as this is a reset function
   if (msg === 'timeloop') {
     step = 1;
+    path = '';
     return `Greetings traveler, I am Yetan. What do you call yourself?`;
   };
 
