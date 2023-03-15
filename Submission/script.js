@@ -79,7 +79,7 @@ const getBotReply = (msg) => {
         return 'Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). ';
       }
       if (msg === 'no') {
-        return '';
+        return 'Does breaking stuff, getting mad, and being indestructible appeal?';
       }
     }
   }
