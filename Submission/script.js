@@ -139,7 +139,7 @@ const getBotReply = (msg) => {
         return 'Paladins crusade for their beliefs Unwavering in duty, they smite the wicked, with divine radiance, and charge forward clad in the heaviest of armor.';
       }
       if (msg === 'no') {
-        return 'Does divine purpose fill your heart?';
+        return 'Wanna steal stuff and never get caught?';
       }
     }
   }
