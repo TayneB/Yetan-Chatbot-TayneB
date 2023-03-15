@@ -248,3 +248,19 @@ Input: no
 Output: If not serving a higher purpose, maybe taking power from a lower place and entering into a pact with a powerful entity could entice you?
 Input: no
 Output: Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.
+
+## t23
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: steel
+Output: Do you like the vast wilds and hiking?
+Input: no
+Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology.
+Input: no
+Output: Does breaking stuff, getting mad, and being indestructible appeal?
+Input: no
+Output: Is inner peace your life-goal?
+Input: yes
+Output: Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.
