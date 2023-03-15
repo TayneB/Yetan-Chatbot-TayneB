@@ -96,7 +96,7 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes') {
-        return 'Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). ';
+        return 'The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.';
       }
       if (msg === 'no') {
         return 'Does breaking stuff, getting mad, and being indestructible appeal?';
