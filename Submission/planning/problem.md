@@ -203,3 +203,17 @@ Output: Does breaking stuff, getting mad, and being indestructible appeal?
 Input: yes
 Output: The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.
 
+## t20
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: steel
+Output: Do you like the vast wilds and hiking?
+Input: no
+Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology.
+Input: no
+Output: Does breaking stuff, getting mad, and being indestructible appeal?
+Input: no
+Output: Is inner peace your life-goal?
+
