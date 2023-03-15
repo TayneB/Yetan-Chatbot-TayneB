@@ -123,6 +123,26 @@ const getBotReply = (msg) => {
       }
     }
   }
+
+  if (step === 9) {
+    step = 10;
+    if (path === 'magic') {
+      if (msg === 'blast') {
+        return 'Sorceror is a choice. You get the cool part of wizard (explosions) without all that pesky study. Cheater. No, I am NOT salty.';
+      }
+      if (msg === 'no') {
+        return 'Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.';
+      }
+    }
+    if (path === 'steel') {
+      if (msg === 'yes') {
+        return 'Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.';
+      }
+      if (msg === 'no') {
+        return 'Does divine purpose fill your heart?';
+      }
+    }
+  }
   /* if (path === 'magic') {
     step = 5;
     if (msg === 'yes' && step === 5) {
