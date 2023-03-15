@@ -163,7 +163,7 @@ const getBotReply = (msg) => {
         return 'Rogues dart through the battlefield and coin-purses alike. Never being pinned down. They strike at their foes weak points and dart away.';
       }
       if (msg === 'no') {
-        return 'Wanna steal stuff and never get caught?';
+        return 'The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can matches the fighters ferocity and directness.';
       }
     }
   }
