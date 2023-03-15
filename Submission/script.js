@@ -274,7 +274,7 @@ const getBotReply = (msg) => {
     return `You already got your answer, go on shoo!... Oh alright, I do like your company George. Say 'Timeloop' and you can go again, hopefully we haven't looped too many times.`;
   }
 
-   if (msg) {
+  if (msg) {
     return `You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.`;
   }
 };
