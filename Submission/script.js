@@ -31,6 +31,8 @@ const getBotReply = (msg) => {
 
   // This declaration solves inputs being different cases and streamlines user inputs
   msg = msg.toLowerCase();
+
+  
   
   if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
   if (step === 2) {
@@ -42,6 +44,7 @@ const getBotReply = (msg) => {
     return `Well ${name}, if you'd like to know more about dnd you can check out more info here. You could also tell me to "Timeloop" and we can start again. Try not to restart time too much, or things get... tricky.`;
   };
   };
+
   // Time anomaly detected
   if ((msg === 'yes' && step === 2 )|| msg === 'beg' || posMispell.includes(msg.toLowerCase())) {
     step = 4;
@@ -65,6 +68,7 @@ const getBotReply = (msg) => {
     step = 6;
     if (path === 'magic') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -73,6 +77,7 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -85,6 +90,7 @@ const getBotReply = (msg) => {
     step = 7;
     if (path === 'magic') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -93,6 +99,7 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). ';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -106,6 +113,7 @@ const getBotReply = (msg) => {
     step = 8;
     if (path === 'magic') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'The cleric blasts foes with holy light and closes terrible wounds with a touch.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -114,6 +122,7 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -127,6 +136,7 @@ const getBotReply = (msg) => {
     step = 9;
     if (path === 'magic') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'Warlocks are eldritch masters who make pacts with otherworldly beings for power. I do know a devil who might be interested in your soul.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -135,6 +145,7 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -148,14 +159,17 @@ const getBotReply = (msg) => {
     step = 10;
     if (path === 'magic') {
       if (msg === 'blast') {
+        step = 404;
         return 'Sorceror is a choice. You get the cool part of wizard (explosions) without all that pesky study. Cheater. No, I am NOT salty.';
       }
       if (msg === 'outsmart') {
+        step = 404;
         return 'Welcome to being the best. Wizards are archmages who control the world, nothing matches a wizards versatility. If an answer can be found, the wizard can provide it.';
       }
     }
     if (path === 'steel') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'Paladins crusade for their beliefs Unwavering in duty, they smite the wicked, with divine radiance, and charge forward clad in the heaviest of armor.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
@@ -177,9 +191,11 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'Rogues dart through the battlefield and coin-purses alike. Never being pinned down. They strike at their foes weak points and dart away.';
       }
       if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
+        step = 404;
         return 'The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can match the fighters ferocity and directness.';
       }
     }
@@ -230,6 +246,10 @@ const getBotReply = (msg) => {
     path = '';
     return `Greetings traveler, I am Yetan. What do you call yourself?`;
   };
+
+  if (step === 404) {
+    return `You already got your answer, go on shoo!... Oh alright, I do like your company George. Say 'Timeloop' and you can go again, hopefully we haven't looped too many times.`;
+  }
 
   if (msg) {
 

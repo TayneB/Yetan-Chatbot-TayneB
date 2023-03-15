@@ -484,3 +484,16 @@ Output: Stop! You violated the laws of time. You'll be paying the courts a fine 
 Input: goober ##This input can be anything
 Output: You're in time jail, reload the page, you're stuck bud
 
+## t15
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: steel
+Output: Do you like the vast wilds and hiking?
+Input: no
+Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology.
+Input: yes
+Output: Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). 
+Input: yes
+Output: You already got your answer, go on shoo!... Oh alright, I do like your company George. Say 'Timeloop' and you can go again, hopefully we haven't looped too many times.
