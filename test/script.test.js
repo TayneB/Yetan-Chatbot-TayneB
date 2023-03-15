@@ -696,7 +696,7 @@ describe("getBotReply", () => {
     const botReply7 = getBotReply("no");
     // Output: Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.
     const expectedReply7 =
-      "Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.";
+      "Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias. So 'Blast' or 'Outsmart'?";
     expect(botReply7).toEqual(expectedReply7);
   });
 
@@ -841,9 +841,9 @@ describe("getBotReply", () => {
 
     // Input: no
     const botReply7 = getBotReply("no");
-    // Output: Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.
+    // Output: Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias So 'Blast' or 'Outsmart'?.
     const expectedReply7 =
-      "Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.";
+      "Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias. So 'Blast' or 'Outsmart'?";
     expect(botReply7).toEqual(expectedReply7);
 
     // Input: blast
@@ -898,9 +898,9 @@ describe("getBotReply", () => {
 
     // Input: no
     const botReply7 = getBotReply("no");
-    // Output: Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.
+    // Output: Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.  So 'Blast' or 'Outsmart'?
     const expectedReply7 =
-      "Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.";
+      "Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias. So 'Blast' or 'Outsmart'?";
     expect(botReply7).toEqual(expectedReply7);
 
     // Input: outsmart

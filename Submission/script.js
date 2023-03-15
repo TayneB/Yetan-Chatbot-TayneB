@@ -160,7 +160,7 @@ const getBotReply = (msg) => {
         return "Warlocks are eldritch masters who make pacts with otherworldly beings for power. I do know a devil who might be interested in your soul.";
       }
       if (msg === "no" || negMispell.includes(msg.toLowerCase())) {
-        return "Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.";
+        return "Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias. So 'Blast' or 'Outsmart'?";
       }
     }
     if (path === "steel") {
