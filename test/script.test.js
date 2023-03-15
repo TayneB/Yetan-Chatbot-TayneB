@@ -694,7 +694,7 @@ describe("getBotReply", () => {
   });
 
   // test 24
-  it("should have correct response for George, yes, steel, no, no, no, yes", () => {
+  it("should have correct response for George, yes, steel, no, no, no, no", () => {
     // Input: George
     const botReply1 = getBotReply("George");
     // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?

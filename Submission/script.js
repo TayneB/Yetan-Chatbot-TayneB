@@ -119,7 +119,7 @@ const getBotReply = (msg) => {
         return 'Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.';
       }
       if (msg === 'no') {
-        return 'Is inner peace your life-goal?';
+        return 'Does divine purpose fill your heart?';
       }
     }
   }

@@ -266,7 +266,6 @@ Input: yes
 Output: Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.
 
 ## t24
-## t23
 Input: George
 Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
 Input: yes
