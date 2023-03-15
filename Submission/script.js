@@ -59,7 +59,7 @@ const getBotReply = (msg) => {
         return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.';
       }
       if (msg === 'no') {
-        return '';
+        return 'Perhaps you find intrigue in the creation of magic devices and arcane-technology.';
       }
     }
   }
@@ -71,7 +71,7 @@ const getBotReply = (msg) => {
         return 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
       }
       if (msg === 'no') {
-        return 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
+        return 'The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?';
       }
     }
     if (path === 'steel') {
