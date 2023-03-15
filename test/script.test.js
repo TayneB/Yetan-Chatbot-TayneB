@@ -1229,4 +1229,12 @@ describe("getBotReply", () => {
     const expectedReply11 = `Greetings traveler, I am Yetan. What do you call yourself?`;
     expect(botReply11).toEqual(expectedReply11);
   });
+
+  it("should have correct response for Yetan", () => {
+    // Input: George
+    const botReply1 = getBotReply("Yetan");
+    // Output: What a conincidence, or maybe you're me in a different universe? No matter, let us continue deciding your destiny within the world of Faerun or beyond. In your universe are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "What a conincidence, or maybe you're me in a different universe? No matter, let us continue deciding your destiny within the world of Faerun or beyond. In your universe are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+  });
 });

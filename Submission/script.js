@@ -13,6 +13,13 @@ let path;
 let timePoliceStars = 1;
 const getBotReply = (msg) => {
   // intro section to test user knowledge
+
+  if (msg === 'Yetan') {
+    step = 2;
+    name = `me`;
+    return `What a conincidence, or maybe you're me in a different universe? No matter, let us continue deciding your destiny within the world of Faerun or beyond. In your universe are you familiar with Dungeons and Dragons 5th edition?`;
+  }
+
   if (step === 1) {
     step = 2;
     name = `${msg}`;
@@ -25,7 +32,7 @@ const getBotReply = (msg) => {
   if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
   if (step === 2) {
     step = 3;
-    return 'A newcomer! Let me explain, Dungeons and Dragons is a roleplaying game that has you act as an adventurer whom you create to play as with a group of friends to overcome challenges set for your group by the game master. The outcome of actions within the game are determined by dice rolls and your characters abilities. We are going to look at what classes from this game might interest you based on your preferences or what sounds cool! Would like to continue determining your fate?'; 
+    return `A newcomer! Let me explain, Dungeons and Dragons is a roleplaying game that has you act as an adventurer whom you create to play as with a group of friends to overcome challenges set for your group by the game master. The outcome of actions within the game are determined by dice rolls and your characters abilities. We are going to look at what classes from this game might interest you based on your preferences or what sounds cool! Would like to continue determining your fate?`; 
   };
   if (step === 3) {
     step = 0;

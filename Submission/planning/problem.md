@@ -458,3 +458,7 @@ Output: *Phew!* Looks like you got away, well I guess the heat has died down by 
 Input: timeloop
 Output: Greetings traveler, I am Yetan. What do you call yourself?
 
+## t37 - Telling Yetan that you are yetan
+Input: Yetan
+Output: What a coincidence, or maybe you're me in a different universe? No matter, let us continue deciding your destiny within the world of Faerun or beyond. In your universe are you familiar with Dungeons and Dragons 5th edition?
+
