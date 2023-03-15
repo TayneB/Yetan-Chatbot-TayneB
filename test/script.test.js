@@ -788,4 +788,55 @@ describe("getBotReply", () => {
     const expectedReply8 = 'Sorceror is a choice. You get the cool part of wizard (explosions) without all that pesky study. Cheater. No, I am NOT salty.';
     expect(botReply8).toEqual(expectedReply8);
   });
+
+  // test 26
+  it("should have correct response for George, yes, magic, no, no, no, no, outsmart", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: yes
+    const botReply2 = getBotReply('yes');
+    // Output: Then we shall begin. Steel or magic?
+    const expectedReply2 = 'Then we shall begin. Steel or magic?';
+    expect(botReply2).toEqual(expectedReply2);
+
+    // Input: magic
+    const botReply3 = getBotReply('magic');
+    // Output: Do you like plants and nature?
+    const expectedReply3 = 'Do you like plants and nature?';
+    expect(botReply3).toEqual(expectedReply3);
+
+    // Input: no
+    const botReply4 = getBotReply('no');
+    // Output: Me neither in honesty, does the sound of playing music to inspire allies and confound foes please your ears?.
+    const expectedReply4 = 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
+    expect(botReply4).toEqual(expectedReply4);
+
+    // Input: no
+    const botReply5 = getBotReply('no');
+    // Output: The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?.
+    const expectedReply5 = 'The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?';
+    expect(botReply5).toEqual(expectedReply5);
+
+    // Input: no
+    const botReply6 = getBotReply('no');
+    // Output: If not serving a higher purpose, maybe taking power from a lower place and entering into a pact with a powerful entity could entice you?.
+    const expectedReply6 = 'If not serving a higher purpose, maybe taking power from a lower place and entering into a pact with a powerful entity could entice you?';
+    expect(botReply6).toEqual(expectedReply6);
+
+    // Input: no
+    const botReply7 = getBotReply('no');
+    // Output: Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.
+    const expectedReply7 = 'Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.';
+    expect(botReply7).toEqual(expectedReply7);
+
+    // Input: outsmart
+    const botReply8 = getBotReply('outsmart');
+    // Output: Welcome to being the best. Wizards are archmages who control the world, nothing matches a wizards versatility. If an answer can be found, the wizard can provide it.
+    const expectedReply8 = 'Welcome to being the best. Wizards are archmages who control the world, nothing matches a wizards versatility. If an answer can be found, the wizard can provide it.';
+    expect(botReply8).toEqual(expectedReply8);
+  });
 });
