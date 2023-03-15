@@ -91,7 +91,7 @@ const getBotReply = (msg) => {
         return 'The cleric blasts foes with holy light and closes terrible wounds with a touch.';
       }
       if (msg === 'no') {
-        return 'The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?';
+        return 'If not serving a higher purpose, maybe taking power from a lower place and entering into a pact with a powerful entity could entice you?';
       }
     }
     if (path === 'steel') {
