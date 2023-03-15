@@ -202,6 +202,11 @@ const getBotReply = (msg) => {
     path = '';
     return `Greetings traveler, I am Yetan. What do you call yourself?`;
   };
+
+  if (msg) {
+
+    return `You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.`;
+  }
 };
 
 export { getBotReply };
