@@ -1056,4 +1056,19 @@ describe("getBotReply", () => {
     expect(botReply9).toEqual(expectedReply9);
   });
 
+  it("should have correct response for George, YES", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: YES
+    const botReply2 = getBotReply('YES');
+    // Output: Then we shall begin. Steel or magic?
+    const expectedReply2 = 'Then we shall begin. Steel or magic?';
+    expect(botReply2).toEqual(expectedReply2);
+
+  });
+
 });

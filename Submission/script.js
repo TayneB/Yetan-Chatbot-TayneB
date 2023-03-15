@@ -196,7 +196,6 @@ const getBotReply = (msg) => {
     path = '';
     return `Greetings traveler, I am Yetan. What do you call yourself?`;
   };
-
 };
 
 export { getBotReply };

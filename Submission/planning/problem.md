@@ -392,3 +392,10 @@ input: no
 Output: Wanna steal stuff and never get caught?
 Input: no
 Output: The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can match the fighters ferocity and directness.
+
+## edge case testing
+## t31
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: YES
+Output: Then we shall begin. Steel or magic?
