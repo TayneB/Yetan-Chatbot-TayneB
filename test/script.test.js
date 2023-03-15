@@ -275,7 +275,7 @@ describe("getBotReply", () => {
 
     // Input: yes
     const botReply5 = getBotReply('yes');
-    // Output: Me neither in honesty, does the sound of playing music to inspire allies and confound foes please your ears?.
+    // Output: The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.
     const expectedReply5 = 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
     expect(botReply5).toEqual(expectedReply5);
   });
@@ -301,7 +301,7 @@ describe("getBotReply", () => {
 
     // Input: yes
     const botReply4 = getBotReply('no');
-    // Output: Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.
+    // Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology.
     const expectedReply4 = 'Perhaps you find intrigue in the creation of magic devices and arcane-technology.';
     expect(botReply4).toEqual(expectedReply4);
   });
@@ -331,10 +331,42 @@ describe("getBotReply", () => {
     const expectedReply4 = 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
     expect(botReply4).toEqual(expectedReply4);
 
-    // Input: yes
+    // Input: no
     const botReply5 = getBotReply('no');
-    // Output: Me neither in honesty, does the sound of playing music to inspire allies and confound foes please your ears?.
+    // Output: The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?.
     const expectedReply5 = 'The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?';
+    expect(botReply5).toEqual(expectedReply5);
+  });
+
+  it("should have correct response for George, yes, steel, no, yes", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: yes
+    const botReply2 = getBotReply('yes');
+    // Output: Then we shall begin. Steel or magic?
+    const expectedReply2 = 'Then we shall begin. Steel or magic?';
+    expect(botReply2).toEqual(expectedReply2);
+
+    // Input: steel
+    const botReply3 = getBotReply('steel');
+    // Output: Do you like the vast wilds and hiking?
+    const expectedReply3 = 'Do you like the vast wilds and hiking?';
+    expect(botReply3).toEqual(expectedReply3);
+
+    // Input: no
+    const botReply4 = getBotReply('no');
+    // Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology..
+    const expectedReply4 = 'Perhaps you find intrigue in the creation of magic devices and arcane-technology.';
+    expect(botReply4).toEqual(expectedReply4);
+
+    // Input: yes
+    const botReply5 = getBotReply('yes');
+    // Output: Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). 
+    const expectedReply5 = 'Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). ';
     expect(botReply5).toEqual(expectedReply5);
   });
 });

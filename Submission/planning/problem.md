@@ -136,3 +136,15 @@ Input: no
 Output: Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?
 Input: no
 Output: The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?
+
+## t15
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: steel
+Output: Do you like the vast wilds and hiking?
+Input: no
+Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology.
+Input: yes
+Output: Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). 
