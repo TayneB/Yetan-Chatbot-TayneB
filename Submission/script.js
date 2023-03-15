@@ -103,6 +103,26 @@ const getBotReply = (msg) => {
       }
     }
   }
+
+  if (step === 8) {
+    step = 9;
+    if (path === 'magic') {
+      if (msg === 'yes') {
+        return 'Warlocks are eldritch masters who make pacts with otherworldly beings for power. I do know a devil who might be interested in your soul.';
+      }
+      if (msg === 'no') {
+        return 'If not serving a higher purpose, maybe taking power from a lower place and entering into a pact with a powerful entity could entice you?';
+      }
+    }
+    if (path === 'steel') {
+      if (msg === 'yes') {
+        return 'The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.';
+      }
+      if (msg === 'no') {
+        return 'Is inner peace your life-goal?';
+      }
+    }
+  }
   /* if (path === 'magic') {
     step = 5;
     if (msg === 'yes' && step === 5) {
