@@ -136,7 +136,7 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes') {
-        return 'Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.';
+        return 'Paladins crusade for their beliefs Unwavering in duty, they smite the wicked, with divine radiance, and charge forward clad in the heaviest of armor.';
       }
       if (msg === 'no') {
         return 'Does divine purpose fill your heart?';
