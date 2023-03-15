@@ -84,6 +84,7 @@ const getBotReply = (msg) => {
     }
   }
 
+  // test 17-20
   if (step === 7) {
     step = 8;
     if (path === 'magic') {
@@ -104,6 +105,7 @@ const getBotReply = (msg) => {
     }
   }
 
+  // test 21-24
   if (step === 8) {
     step = 9;
     if (path === 'magic') {
@@ -124,6 +126,7 @@ const getBotReply = (msg) => {
     }
   }
 
+  // test 25-28
   if (step === 9) {
     step = 10;
     if (path === 'magic') {
@@ -137,6 +140,26 @@ const getBotReply = (msg) => {
     if (path === 'steel') {
       if (msg === 'yes') {
         return 'Paladins crusade for their beliefs Unwavering in duty, they smite the wicked, with divine radiance, and charge forward clad in the heaviest of armor.';
+      }
+      if (msg === 'no') {
+        return 'Wanna steal stuff and never get caught?';
+      }
+    }
+  }
+
+  if (step === 10) {
+    step = 1337;
+    if (path === 'magic') {
+      if (msg === 'blast') {
+        return 'Sorceror is a choice. You get the cool part of wizard (explosions) without all that pesky study. Cheater. No, I am NOT salty.';
+      }
+      if (msg === 'outsmart') {
+        return 'Welcome to being the best. Wizards are archmages who control the world, nothing matches a wizards versatility. If an answer can be found, the wizard can provide it.';
+      }
+    }
+    if (path === 'steel') {
+      if (msg === 'yes') {
+        return 'Rogues dart through the battlefield and coin-purses alike. Never being pinned down. They strike at their foes weak points and dart away.';
       }
       if (msg === 'no') {
         return 'Wanna steal stuff and never get caught?';
