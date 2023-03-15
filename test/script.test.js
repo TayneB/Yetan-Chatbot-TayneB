@@ -370,6 +370,7 @@ describe("getBotReply", () => {
     expect(botReply5).toEqual(expectedReply5);
   });
 
+  // test 16
   it("should have correct response for George, yes, steel, no, no", () => {
     // Input: George
     const botReply1 = getBotReply("George");
@@ -475,6 +476,44 @@ describe("getBotReply", () => {
     const botReply6 = getBotReply('no');
     // Output: If not serving a higher purpose, maybe taking power from a lower place and entering into a pact with a powerful entity could entice you?.
     const expectedReply6 = 'If not serving a higher purpose, maybe taking power from a lower place and entering into a pact with a powerful entity could entice you?';
+    expect(botReply6).toEqual(expectedReply6);
+  });
+
+  it("should have correct response for George, yes, steel, no, no", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: yes
+    const botReply2 = getBotReply('yes');
+    // Output: Then we shall begin. Steel or magic?
+    const expectedReply2 = 'Then we shall begin. Steel or magic?';
+    expect(botReply2).toEqual(expectedReply2);
+
+    // Input: steel
+    const botReply3 = getBotReply('steel');
+    // Output: Do you like the vast wilds and hiking?
+    const expectedReply3 = 'Do you like the vast wilds and hiking?';
+    expect(botReply3).toEqual(expectedReply3);
+
+    // Input: no
+    const botReply4 = getBotReply('no');
+    // Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology..
+    const expectedReply4 = 'Perhaps you find intrigue in the creation of magic devices and arcane-technology.';
+    expect(botReply4).toEqual(expectedReply4);
+
+    // Input: no
+    const botReply5 = getBotReply('no');
+    // Output: Does breaking stuff, getting mad, and being indestructible appeal?. 
+    const expectedReply5 = 'Does breaking stuff, getting mad, and being indestructible appeal?';
+    expect(botReply5).toEqual(expectedReply5);
+
+    // Input: yes
+    const botReply6 = getBotReply('yes');
+    // Output: The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.
+    const expectedReply6 = 'The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.';
     expect(botReply6).toEqual(expectedReply6);
   });
 });
