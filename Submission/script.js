@@ -83,6 +83,26 @@ const getBotReply = (msg) => {
       }
     }
   }
+
+  if (step === 7) {
+    step = 8;
+    if (path === 'magic') {
+      if (msg === 'yes') {
+        return 'The cleric blasts foes with holy light and closes terrible wounds with a touch.';
+      }
+      if (msg === 'no') {
+        return 'The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?';
+      }
+    }
+    if (path === 'steel') {
+      if (msg === 'yes') {
+        return 'Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). ';
+      }
+      if (msg === 'no') {
+        return 'Does breaking stuff, getting mad, and being indestructible appeal?';
+      }
+    }
+  }
   /* if (path === 'magic') {
     step = 5;
     if (msg === 'yes' && step === 5) {
