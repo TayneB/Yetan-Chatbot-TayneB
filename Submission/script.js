@@ -5,6 +5,7 @@
  *
  */
 
+const posMispell = ['yep', 'yeah', 'yea', 'yar'];
 let step = 1;
 let name;
 let path;
@@ -15,9 +16,12 @@ const getBotReply = (msg) => {
     name = `${msg}`;
     return `Well met, ${name}, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?`;
   };
-  
+
   // This declaration solves inputs being different cases and streamlines user inputs
   msg = msg.toLowerCase();
+  
+  // Checks spelling mistakes
+  
 
   if (msg === 'no') {
   if (step === 2) {
@@ -30,7 +34,7 @@ const getBotReply = (msg) => {
   };
   };
   // Time anomaly detected
-  if ((msg === 'yes' && step === 2 )|| msg === 'beg') {
+  if ((msg === 'yes' && step === 2 )|| msg === 'beg' || posMispell.includes(msg.toLowerCase())) {
     step = 4;
     return 'Then we shall begin. Steel or magic?';
   };
@@ -51,7 +55,7 @@ const getBotReply = (msg) => {
   if (step === 5) {
     step = 6;
     if (path === 'magic') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
       }
       if (msg === 'no') {
@@ -59,7 +63,7 @@ const getBotReply = (msg) => {
       }
     }
     if (path === 'steel') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.';
       }
       if (msg === 'no') {
@@ -71,7 +75,7 @@ const getBotReply = (msg) => {
   if (step === 6) {
     step = 7;
     if (path === 'magic') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
       }
       if (msg === 'no') {
@@ -79,7 +83,7 @@ const getBotReply = (msg) => {
       }
     }
     if (path === 'steel') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). ';
       }
       if (msg === 'no') {
@@ -92,7 +96,7 @@ const getBotReply = (msg) => {
   if (step === 7) {
     step = 8;
     if (path === 'magic') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'The cleric blasts foes with holy light and closes terrible wounds with a touch.';
       }
       if (msg === 'no') {
@@ -100,7 +104,7 @@ const getBotReply = (msg) => {
       }
     }
     if (path === 'steel') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.';
       }
       if (msg === 'no') {
@@ -113,7 +117,7 @@ const getBotReply = (msg) => {
   if (step === 8) {
     step = 9;
     if (path === 'magic') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Warlocks are eldritch masters who make pacts with otherworldly beings for power. I do know a devil who might be interested in your soul.';
       }
       if (msg === 'no') {
@@ -121,7 +125,7 @@ const getBotReply = (msg) => {
       }
     }
     if (path === 'steel') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.';
       }
       if (msg === 'no') {
@@ -142,7 +146,7 @@ const getBotReply = (msg) => {
       }
     }
     if (path === 'steel') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Paladins crusade for their beliefs Unwavering in duty, they smite the wicked, with divine radiance, and charge forward clad in the heaviest of armor.';
       }
       if (msg === 'no') {
@@ -163,7 +167,7 @@ const getBotReply = (msg) => {
       }
     }
     if (path === 'steel') {
-      if (msg === 'yes') {
+      if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Rogues dart through the battlefield and coin-purses alike. Never being pinned down. They strike at their foes weak points and dart away.';
       }
       if (msg === 'no') {
