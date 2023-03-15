@@ -13,6 +13,9 @@ let path;
 let timePoliceStars = 1;
 const getBotReply = (msg) => {
   // intro section to test user knowledge
+  if (step === 911 && msg) {
+    return `You're in time jail, reload the page, you're stuck bud`;
+  }
 
   if (msg === 'Yetan') {
     step = 2;
@@ -208,10 +211,11 @@ const getBotReply = (msg) => {
 
   if (timePoliceStars === 4 && msg === 'timeloop') {
     timePoliceStars = 5;
-    return `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? ${timePoliceStars}!?!? FAR too many!, quick ${name} 'RUN' or they'll tag your time signature`;
+    return `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? ${timePoliceStars - 1}!?!? FAR too many!, quick ${name} 'RUN' or they'll tag your time signature`;
   };
 
   if (timePoliceStars === 5 && msg === 'timeloop') {
+    step = 911;
     return `Stop! You violated the laws of time. You'll be paying the courts a fine and serving a sentence. Your stolen moments are now forfeit. *Ah Crap, looks like there's no way out, better reboot the universe, oh wait, I mean reload the webpage hehe*`;
   }
 

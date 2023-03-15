@@ -462,3 +462,25 @@ Output: Greetings traveler, I am Yetan. What do you call yourself?
 Input: Yetan
 Output: What a coincidence, or maybe you're me in a different universe? No matter, let us continue deciding your destiny within the world of Faerun or beyond. In your universe are you familiar with Dungeons and Dragons 5th edition?
 
+## t38 - Getting caught by the time police
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: Timeloop
+Output: Greetings traveler, I am Yetan. What do you call yourself?
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: Timeloop
+Output: Greetings traveler, I am Yetan. What do you call yourself?
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: Timeloop
+Output: Greetings traveler, I am Yetan. What do you call yourself?
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: Timeloop
+Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4 far too many!, quick George run or they'll tag your time signature
+Input: Timeloop
+Output: Stop! You violated the laws of time. You'll be paying the courts a fine and serving a sentence. Your stolen moments are now forfeit. *Ah Crap, looks like there's no way out, better reboot the universe, oh wait, I mean reload the webpage hehe*
+Input: goober ##This input can be anything
+Output: You're in time jail, reload the page, you're stuck bud
+

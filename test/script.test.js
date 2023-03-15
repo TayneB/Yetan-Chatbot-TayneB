@@ -1162,8 +1162,8 @@ describe("getBotReply", () => {
 
     // Input: timeloop
     const botReply9 = getBotReply('timeloop');
-    // Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 5!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature.
-    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 5!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature`;
+    // Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature.
+    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature`;
     expect(botReply9).toEqual(expectedReply9);
   });
 
@@ -1213,8 +1213,8 @@ describe("getBotReply", () => {
 
     // Input: timeloop
     const botReply9 = getBotReply('timeloop');
-    // Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 5!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature.
-    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 5!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature`;
+    // Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature.
+    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature`;
     expect(botReply9).toEqual(expectedReply9);
 
     // Input: RUN
@@ -1284,8 +1284,8 @@ describe("getBotReply", () => {
 
     // Input: timeloop
     const botReply9 = getBotReply('timeloop');
-    // Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 5!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature.
-    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 5!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature`;
+    // Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature.
+    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature`;
     expect(botReply9).toEqual(expectedReply9);
 
     // Input: timeloop
@@ -1293,5 +1293,12 @@ describe("getBotReply", () => {
     // Output: Stop! You violated the laws of time. You'll be paying the courts a fine and serving a sentence. Your stolen moments are now forfeit. *Ah Crap, looks like there's no way out, better reboot the universe, oh wait, I mean reload the webpage hehe*
     const expectedReply10 = `Stop! You violated the laws of time. You'll be paying the courts a fine and serving a sentence. Your stolen moments are now forfeit. *Ah Crap, looks like there's no way out, better reboot the universe, oh wait, I mean reload the webpage hehe*`;
     expect(botReply10).toEqual(expectedReply10);
+
+   // Input: goober
+   const botReply11 = getBotReply('goober');
+   // Output: You're in time jail, reload the page, you're stuck bud
+   const expectedReply11 = `You're in time jail, reload the page, you're stuck bud`;
+   expect(botReply11).toEqual(expectedReply11);
+    
   });
 });
