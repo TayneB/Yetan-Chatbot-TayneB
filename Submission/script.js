@@ -199,8 +199,14 @@ const getBotReply = (msg) => {
     return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.'
   }; */
 
-  if (timePoliceStars >= 4) {
+  if (timePoliceStars === 4 && msg === 'timeloop') {
+    timePoliceStars = 5;
     return `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? ${timePoliceStars}!?!? FAR too many!, quick ${name} 'RUN' or they'll tag your time signature`;
+  };
+
+  if (msg === 'run') {
+    timePoliceStars = 1;
+    return `*Phew!* Looks like you got away, well I guess the heat has died down by now and it should be ok to use 'timeloop' to try again now`
   };
   // Separated from the rest as this is a reset function
   if (msg === 'timeloop') {
