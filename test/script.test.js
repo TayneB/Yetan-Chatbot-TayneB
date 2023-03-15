@@ -1100,4 +1100,19 @@ describe("getBotReply", () => {
     const expectedReply2 = 'A newcomer! Let me explain, Dungeons and Dragons is a roleplaying game that has you act as an adventurer whom you create to play as with a group of friends to overcome challenges set for your group by the game master. The outcome of actions within the game are determined by dice rolls and your characters abilities. We are going to look at what classes from this game might interest you based on your preferences or what sounds cool! Would like to continue determining your fate?';
     expect(botReply2).toEqual(expectedReply2);
   });
+
+  // test 33
+  it("should have correct response for George, narP", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: glsagdjklgdsafop@__-!#!FD)jfdsFJA0_JD(||)
+    const botReply2 = getBotReply('glsagdjklgdsafop@__-!#!FD)jfdsFJA0_JD(||)');
+    // Output: You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.
+    const expectedReply2 = `You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.`;
+    expect(botReply2).toEqual(expectedReply2);
+  });
 });
