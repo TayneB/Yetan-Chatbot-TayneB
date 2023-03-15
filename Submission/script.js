@@ -32,8 +32,6 @@ const getBotReply = (msg) => {
   // This declaration solves inputs being different cases and streamlines user inputs
   msg = msg.toLowerCase();
 
-  
-  
   if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
   if (step === 2) {
     step = 3;
@@ -252,7 +250,6 @@ const getBotReply = (msg) => {
   }
 
   if (msg) {
-
     return `You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.`;
   };
 };
