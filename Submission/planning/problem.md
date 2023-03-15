@@ -417,3 +417,22 @@ Input: George
 Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
 Input: glsagdjklgdsafop@__-!#!FD)jfdsFJA0_JD(||)
 Output: You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.
+
+## t35 - Time police wanted meter
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: Timeloop
+Output: Greetings traveler, I am Yetan. What do you call yourself?
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: Timeloop
+Output: Greetings traveler, I am Yetan. What do you call yourself?
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: Timeloop
+Output: Greetings traveler, I am Yetan. What do you call yourself?
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: Timeloop
+Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4 far too many!, quick George run or they'll tag your time signature
+

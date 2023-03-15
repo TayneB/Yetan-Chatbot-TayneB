@@ -1101,8 +1101,8 @@ describe("getBotReply", () => {
     expect(botReply2).toEqual(expectedReply2);
   });
 
-  // test 33
-  it("should have correct response for George, narP", () => {
+  // test 34
+  it("should have correct response for George, glsagdjklgdsafop@__-!#!FD)jfdsFJA0_JD(||)", () => {
     // Input: George
     const botReply1 = getBotReply("George");
     // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
@@ -1114,5 +1114,60 @@ describe("getBotReply", () => {
     // Output: You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.
     const expectedReply2 = `You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.`;
     expect(botReply2).toEqual(expectedReply2);
+  });
+
+  // test 34
+  it("should have correct response for George, glsagdjklgdsafop@__-!#!FD)jfdsFJA0_JD(||)", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: timeloop
+    const botReply2 = getBotReply('timeloop');
+    // Output: Greetings traveler, I am Yetan. What do you call yourself?.
+    const expectedReply2 = `Greetings traveler, I am Yetan. What do you call yourself?`;
+    expect(botReply2).toEqual(expectedReply2);
+
+    // Input: George
+    const botReply4 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply4 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply4).toEqual(expectedReply4);
+
+    // Input: timeloop
+    const botReply5 = getBotReply('timeloop');
+    // Output: Greetings traveler, I am Yetan. What do you call yourself?.
+    const expectedReply5 = `Greetings traveler, I am Yetan. What do you call yourself?`;
+    expect(botReply5).toEqual(expectedReply5);
+
+    // Input: George
+    const botReply6 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply6= "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply6).toEqual(expectedReply6);
+
+    // Input: timeloop
+    const botReply7 = getBotReply('timeloop');
+    // Output: Greetings traveler, I am Yetan. What do you call yourself?.
+    const expectedReply7 = `Greetings traveler, I am Yetan. What do you call yourself?`;
+    expect(botReply7).toEqual(expectedReply7);
+
+    // Input: George
+    const botReply8 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply8 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply8).toEqual(expectedReply8);
+
+    // Input: timeloop
+    const botReply9 = getBotReply('timeloop');
+    // Output: Greetings traveler, I am Yetan. What do you call yourself?.
+    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4 far too many!, quick George run or they'll tag your time signature`;
+    expect(botReply9).toEqual(expectedReply9);
+
+    
+
+
   });
 });

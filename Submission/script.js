@@ -10,6 +10,7 @@ const negMispell = ['nope', 'no thanks', 'narp'];
 let step = 1;
 let name;
 let path;
+let timePoliceStars = 0;
 const getBotReply = (msg) => {
   // intro section to test user knowledge
   if (step === 1) {
@@ -173,6 +174,8 @@ const getBotReply = (msg) => {
       }
     }
   }
+
+  // Vestigial Spaghetti code - it's good for a laugh
   /* if (path === 'magic') {
     step = 5;
     if (msg === 'yes' && step === 5) {
@@ -196,9 +199,13 @@ const getBotReply = (msg) => {
     return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.'
   }; */
 
+  if (timePoliceStars >= 4) {
+    return `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? ${timePoliceStars} far too many!, quick ${name} run or they'll tag your time signature `
+  }
   // Separated from the rest as this is a reset function
   if (msg === 'timeloop') {
     step = 1;
+    timePoliceStars += 1;
     path = '';
     return `Greetings traveler, I am Yetan. What do you call yourself?`;
   };
