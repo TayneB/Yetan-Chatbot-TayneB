@@ -6,6 +6,7 @@
  */
 
 const posMispell = ['yep', 'yeah', 'yea', 'yar'];
+const negMispell = ['nope', 'no thanks', 'narp'];
 let step = 1;
 let name;
 let path;
@@ -20,10 +21,7 @@ const getBotReply = (msg) => {
   // This declaration solves inputs being different cases and streamlines user inputs
   msg = msg.toLowerCase();
   
-  // Checks spelling mistakes
-  
-
-  if (msg === 'no') {
+  if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
   if (step === 2) {
     step = 3;
     return 'A newcomer! Let me explain, Dungeons and Dragons is a roleplaying game that has you act as an adventurer whom you create to play as with a group of friends to overcome challenges set for your group by the game master. The outcome of actions within the game are determined by dice rolls and your characters abilities. We are going to look at what classes from this game might interest you based on your preferences or what sounds cool! Would like to continue determining your fate?'; 
@@ -58,7 +56,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'I suggest druid, they are masters of the natural world, they wield powerful magic and can shape-shift into mighty beasts.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'Me neither in honesty, but does the sound of playing music to inspire allies and confound foes please your ears?';
       }
     }
@@ -66,7 +64,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'Perhaps you find intrigue in the creation of magic devices and arcane-technology.';
       }
     }
@@ -78,7 +76,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'The bard may be to your liking. They strum the grandest tunes enthralling the world to their charismatic whim.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'The strumming can definitely get irritating. Perhaps serving a divine purpose for the good of all would suit you?';
       }
     }
@@ -86,7 +84,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). ';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'Does breaking stuff, getting mad, and being indestructible appeal?';
       }
     }
@@ -99,7 +97,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'The cleric blasts foes with holy light and closes terrible wounds with a touch.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'If not serving a higher purpose, maybe taking power from a lower place and entering into a pact with a powerful entity could entice you?';
       }
     }
@@ -107,7 +105,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'Is inner peace your life-goal?';
       }
     }
@@ -120,7 +118,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Warlocks are eldritch masters who make pacts with otherworldly beings for power. I do know a devil who might be interested in your soul.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.';
       }
     }
@@ -128,7 +126,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'Does divine purpose fill your heart?';
       }
     }
@@ -149,7 +147,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Paladins crusade for their beliefs Unwavering in duty, they smite the wicked, with divine radiance, and charge forward clad in the heaviest of armor.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'Wanna steal stuff and never get caught?';
       }
     }
@@ -170,7 +168,7 @@ const getBotReply = (msg) => {
       if (msg === 'yes' || posMispell.includes(msg.toLowerCase())) {
         return 'Rogues dart through the battlefield and coin-purses alike. Never being pinned down. They strike at their foes weak points and dart away.';
       }
-      if (msg === 'no') {
+      if (msg === 'no' || negMispell.includes(msg.toLowerCase())) {
         return 'The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can match the fighters ferocity and directness.';
       }
     }
