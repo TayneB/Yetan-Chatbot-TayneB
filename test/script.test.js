@@ -1051,8 +1051,8 @@ describe("getBotReply", () => {
 
     // Input: no
     const botReply9 = getBotReply('no');
-    // Output: The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can matches the fighters ferocity and directness.
-    const expectedReply9 = 'The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can matches the fighters ferocity and directness.';
+    // Output: The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can match the fighters ferocity and directness.
+    const expectedReply9 = 'The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can match the fighters ferocity and directness.';
     expect(botReply9).toEqual(expectedReply9);
   });
 

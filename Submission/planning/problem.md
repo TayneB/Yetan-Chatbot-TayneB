@@ -391,4 +391,4 @@ Output: Does divine purpose fill your heart?
 input: no
 Output: Wanna steal stuff and never get caught?
 Input: no
-Output: The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can matches the fighters ferocity and directness.
+Output: The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can match the fighters ferocity and directness.
