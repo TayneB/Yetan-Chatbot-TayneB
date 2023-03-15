@@ -10,7 +10,7 @@ const negMispell = ['nope', 'no thanks', 'narp'];
 let step = 1;
 let name;
 let path;
-let timePoliceStars = 0;
+let timePoliceStars = 1;
 const getBotReply = (msg) => {
   // intro section to test user knowledge
   if (step === 1) {
@@ -200,8 +200,8 @@ const getBotReply = (msg) => {
   }; */
 
   if (timePoliceStars >= 4) {
-    return `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? ${timePoliceStars} far too many!, quick ${name} run or they'll tag your time signature `
-  }
+    return `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? ${timePoliceStars}!?!? FAR too many!, quick ${name} 'RUN' or they'll tag your time signature`;
+  };
   // Separated from the rest as this is a reset function
   if (msg === 'timeloop') {
     step = 1;
@@ -213,7 +213,7 @@ const getBotReply = (msg) => {
   if (msg) {
 
     return `You aren't making any sense and I can't understand you. Try using yes or no, if you're still stuck try "Timeloop". That should get you back to the start quick-smart! Try not to timeloop too much or we might break something.`;
-  }
+  };
 };
 
 export { getBotReply };

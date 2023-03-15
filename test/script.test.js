@@ -1117,7 +1117,7 @@ describe("getBotReply", () => {
   });
 
   // test 34
-  it("should have correct response for George, glsagdjklgdsafop@__-!#!FD)jfdsFJA0_JD(||)", () => {
+  it("should have correct response for (George, timeloop)x4", () => {
     // Input: George
     const botReply1 = getBotReply("George");
     // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
@@ -1162,8 +1162,8 @@ describe("getBotReply", () => {
 
     // Input: timeloop
     const botReply9 = getBotReply('timeloop');
-    // Output: Greetings traveler, I am Yetan. What do you call yourself?.
-    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4 far too many!, quick George run or they'll tag your time signature`;
+    // Output: OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature.
+    const expectedReply9 = `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? 4!?!? FAR too many!, quick George 'RUN' or they'll tag your time signature`;
     expect(botReply9).toEqual(expectedReply9);
 
     
