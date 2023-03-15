@@ -130,8 +130,8 @@ const getBotReply = (msg) => {
       if (msg === 'blast') {
         return 'Sorceror is a choice. You get the cool part of wizard (explosions) without all that pesky study. Cheater. No, I am NOT salty.';
       }
-      if (msg === 'no') {
-        return 'Only two more spellcasters left. Would you prefer to blast your enemies into dust or just outsmart everyone and make a fool out of your foes, eventually wielding the power of a god?!?! ... I may have a bias.';
+      if (msg === 'outsmart') {
+        return 'Welcome to being the best. Wizards are archmages who control the world, nothing matches a wizards versatility. If an answer can be found, the wizard can provide it.';
       }
     }
     if (path === 'steel') {
