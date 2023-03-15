@@ -147,6 +147,7 @@ const getBotReply = (msg) => {
     }
   }
 
+  // test 29-30
   if (step === 10) {
     step = 1337;
     if (path === 'magic') {

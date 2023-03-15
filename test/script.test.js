@@ -999,4 +999,61 @@ describe("getBotReply", () => {
     expect(botReply9).toEqual(expectedReply9);
   });
 
+  // test 30
+  it("should have correct response for George, yes, steel, no, no, no, no, no, no", () => {
+    // Input: George
+    const botReply1 = getBotReply("George");
+    // Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+    const expectedReply1 = "Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    // Input: yes
+    const botReply2 = getBotReply('yes');
+    // Output: Then we shall begin. Steel or magic?
+    const expectedReply2 = 'Then we shall begin. Steel or magic?';
+    expect(botReply2).toEqual(expectedReply2);
+
+    // Input: steel
+    const botReply3 = getBotReply('steel');
+    // Output: Do you like the vast wilds and hiking?
+    const expectedReply3 = 'Do you like the vast wilds and hiking?';
+    expect(botReply3).toEqual(expectedReply3);
+
+    // Input: no
+    const botReply4 = getBotReply('no');
+    // Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology..
+    const expectedReply4 = 'Perhaps you find intrigue in the creation of magic devices and arcane-technology.';
+    expect(botReply4).toEqual(expectedReply4);
+
+    // Input: no
+    const botReply5 = getBotReply('no');
+    // Output: Does breaking stuff, getting mad, and being indestructible appeal?. 
+    const expectedReply5 = 'Does breaking stuff, getting mad, and being indestructible appeal?';
+    expect(botReply5).toEqual(expectedReply5);
+
+    // Input: no
+    const botReply6 = getBotReply('no');
+    // Output: Is inner peace your life-goal?.
+    const expectedReply6 = 'Is inner peace your life-goal?';
+    expect(botReply6).toEqual(expectedReply6);
+
+    // Input: no
+    const botReply7 = getBotReply('no');
+    // Output: Does divine purpose fill your heart?.
+    const expectedReply7 = 'Does divine purpose fill your heart?';
+    expect(botReply7).toEqual(expectedReply7);
+
+    // Input: no
+    const botReply8 = getBotReply('no');
+    // Output: Wanna steal stuff and never get caught?.
+    const expectedReply8 = 'Wanna steal stuff and never get caught?';
+    expect(botReply8).toEqual(expectedReply8);
+
+    // Input: no
+    const botReply9 = getBotReply('no');
+    // Output: The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can matches the fighters ferocity and directness.
+    const expectedReply9 = 'The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can matches the fighters ferocity and directness.';
+    expect(botReply9).toEqual(expectedReply9);
+  });
+
 });

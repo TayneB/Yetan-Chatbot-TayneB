@@ -372,3 +372,23 @@ input: no
 Output: Wanna steal stuff and never get caught?
 Input: yes
 Output: Rogues dart through the battlefield and coin-purses alike. Never being pinned down. They strike at their foes weak points and dart away.
+
+# t30
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: steel
+Output: Do you like the vast wilds and hiking?
+Input: no
+Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology.
+Input: no
+Output: Does breaking stuff, getting mad, and being indestructible appeal?
+Input: no
+Output: Is inner peace your life-goal?
+Input: no
+Output: Does divine purpose fill your heart?
+input: no
+Output: Wanna steal stuff and never get caught?
+Input: no
+Output: The only option left is the fighter. They are considered the most "generic" class, but nothing can truly rival their martial prowess. If something needs killing, nothing can matches the fighters ferocity and directness.
