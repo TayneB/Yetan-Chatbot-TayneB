@@ -15,6 +15,10 @@ const getBotReply = (msg) => {
     name = `${msg}`;
     return `Well met, ${name}, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?`;
   };
+  
+  // This declaration solves inputs being different cases and streamlines user inputs
+  msg = msg.toLowerCase();
+
   if (msg === 'no') {
   if (step === 2) {
     step = 3;

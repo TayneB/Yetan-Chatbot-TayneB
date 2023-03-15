@@ -1068,7 +1068,6 @@ describe("getBotReply", () => {
     // Output: Then we shall begin. Steel or magic?
     const expectedReply2 = 'Then we shall begin. Steel or magic?';
     expect(botReply2).toEqual(expectedReply2);
-
   });
 
 });
