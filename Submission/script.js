@@ -5,8 +5,8 @@
  *
  */
 
-const posMispell = ['yep', 'yeah', 'yea', 'yar'];
-const negMispell = ['nope', 'no thanks', 'narp'];
+const posMispell = ['yep', 'yeah', 'yea', 'yar', 'yessum', 'yee', 'yup', 'ya', 'ja'];
+const negMispell = ['nope', 'no thanks', 'narp', 'negative', 'na', 'nah', 'nada'];
 let step = 1;
 let name;
 let path;
@@ -210,6 +210,10 @@ const getBotReply = (msg) => {
     timePoliceStars = 5;
     return `OH CRAP! ITS THE TIME POLICE, HOW MANY TIMES DID YOU RESET!!?!?!? ${timePoliceStars}!?!? FAR too many!, quick ${name} 'RUN' or they'll tag your time signature`;
   };
+
+  if (timePoliceStars === 5 && msg === 'timeloop') {
+    return `Stop! You violated the laws of time. You'll be paying the courts a fine and serving a sentence. Your stolen moments are now forfeit. *Ah Crap, looks like there's no way out, better reboot the universe, oh wait, I mean reload the webpage hehe*`;
+  }
 
   if (msg === 'run') {
     timePoliceStars = 1;
