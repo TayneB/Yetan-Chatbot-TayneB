@@ -76,7 +76,7 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes') {
-        return 'Rangers are martial experts with a splash of magic. Shoot bows, clash swords, eat magic berries and never get lost.';
+        return 'Artificers use their brains to solve problems with arcane and steel fusions. (Also explosions). ';
       }
       if (msg === 'no') {
         return '';
