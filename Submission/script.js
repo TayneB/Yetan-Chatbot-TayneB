@@ -116,7 +116,7 @@ const getBotReply = (msg) => {
     }
     if (path === 'steel') {
       if (msg === 'yes') {
-        return 'The barbarian is unmatched in how durable they are. Prone to surviving meteors being dropped on their heads, which is then followed by them picking the meteor up and beating whatever threw it at them into a bloody mess.';
+        return 'Monks use the serenity and calm to dish out lightning fast whoopings with just their fists. Eventually being able to disrupt their enemies chi, stunning them into easy targets.';
       }
       if (msg === 'no') {
         return 'Is inner peace your life-goal?';
