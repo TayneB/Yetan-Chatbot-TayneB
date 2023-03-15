@@ -334,3 +334,21 @@ Input: no
 Output: Does divine purpose fill your heart?
 input: yes
 Output: Paladins crusade for their beliefs Unwavering in duty, they smite the wicked, with divine radiance, and charge forward clad in the heaviest of armor.
+
+## t28
+Input: George
+Output: Well met, George, I am here to help you decide your destiny within the world of Faerun or beyond. Are you familiar with Dungeons and Dragons 5th edition?
+Input: yes
+Output: Then we shall begin. Steel or magic?
+Input: steel
+Output: Do you like the vast wilds and hiking?
+Input: no
+Output: Perhaps you find intrigue in the creation of magic devices and arcane-technology.
+Input: no
+Output: Does breaking stuff, getting mad, and being indestructible appeal?
+Input: no
+Output: Is inner peace your life-goal?
+Input: no
+Output: Does divine purpose fill your heart?
+input: no
+Output: Wanna steal stuff and never get caught?
